@@ -1,0 +1,79 @@
+#include <stdio.h>
+
+int main() {
+  int respuestas_correctas = 0;
+  
+  // Pregunta 1
+  printf("¿Cuál es el nombre del cliente?\n");
+  char nombre[20];
+  scanf("%s", nombre);
+  
+  // Pregunta 2
+  printf("¿En una escala del 1 al 10, que tan satisfecho está con nuestro servicio al cliente?\n");
+  int servicio_cliente;
+  scanf("%d", &servicio_cliente);
+  
+  // Pregunta 3
+  printf("¿En una escala del 1 al 10, que tan satisfecho está con la calidad de nuestro producto?\n");
+  int calidad_producto;
+  scanf("%d", &calidad_producto);
+  
+  // Pregunta 4
+  printf("¿En una escala del 1 al 10, que tan fácil fue resolver su problema con nuestro producto?\n");
+  int facilidad_resolucion;
+  scanf("%d", &facilidad_resolucion);
+  
+  // Pregunta 5
+  printf("¿En una escala del 1 al 10, que tan recomendable es nuestro producto a sus amigos y familiares?\n");
+  int recomendacion;
+  scanf("%d", &recomendacion);
+  
+  // Pregunta 6
+  printf("¿En una escala del 1 al 10, que tan rápido resolvimos su problema?\n");
+  int rapidez;
+  scanf("%d", &rapidez);
+  
+  // Pregunta 7
+  printf("¿En una escala del 1 al 10, que tan satisfecho está con la amabilidad de nuestro personal?\n");
+  int amabilidad;
+  scanf("%d", &amabilidad);
+  
+  // Pregunta 8
+  printf("¿En una escala del 1 al 10, que tan satisfecho está con la eficacia de nuestro producto?\n");
+  int eficacia;
+  scanf("%d", &eficacia);
+  
+  // Pregunta 9
+  printf("¿En una escala del 1 al 10, que tan satisfecho está con la relación calidad-precio de nuestro producto?\n");
+  int relacion_calidad_precio;
+  scanf("%d", &relacion_calidad_precio);
+  
+  // Pregunta 10
+  printf("¿En una escala del 1 al 10, que tan satisfecho está con el tiempo de entrega de nuestro producto?\n");
+  int tiempo_entrega;
+  scanf("%d", &tiempo_entrega);
+  
+  // Imprime las respuestas
+  printf("El nombre del cliente es: %s\n", nombre);
+  printf("Satisfacción con el servicio al cliente: %d/10\n", servicio_cliente);
+  printf("Satisfacción con la calidad del producto: %d/10\n", calidad_producto);
+  printf("Facilidad de resolución de problemas: %d/10\n", facilidad_resolucion);
+  printf("Recomendación del producto: %d/10\n", recomendacion);
+  printf("Rapidez en la resolución del problema: %d/10\n", rapidez);
+  printf("Satisfacción con la amabilidad del personal: %d/10\n", amabilidad);
+  printf("Satisfacción con la eficacia del producto: %d/10\n", eficacia);
+  printf("Satisfacción con la relación calidad-precio del producto: %d/10\n", relacion_calidad_precio);
+  printf("Satisfacción con el tiempo de entrega del producto: %d/10\n", tiempo_entrega);
+
+  // Calcula la puntuación total
+  int puntuacion_total = servicio_cliente + calidad_producto + facilidad_resolucion + recomendacion + rapidez + amabilidad + eficacia + relacion_calidad_precio + tiempo_entrega;
+
+  // Calcula la puntuación promedio
+  float puntuacion_promedio = puntuacion_total / 9.0;
+
+  // Imprime la puntuación total y promedio
+  printf("La puntuación total es: %d\n", puntuacion_total);
+  printf("La puntuación promedio es: %.2f\n", puntuacion_promedio);
+
+  return 0;
+}
